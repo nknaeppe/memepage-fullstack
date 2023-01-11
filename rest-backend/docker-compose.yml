@@ -1,0 +1,8 @@
+version: "3.8"
+services:
+   meme_db:
+      image: mongo:latest
+      ports:
+      - 27017:27017
+
+

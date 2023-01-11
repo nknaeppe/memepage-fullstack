@@ -1,0 +1,7 @@
+version: "3.8"
+services:
+  meme-frontend:
+    image: meme-frontend
+    container_name: meme-frontend
+    ports:
+      - 4080:80

@@ -1,0 +1,14 @@
+version: "3.8"
+services:
+  meme_frontend:
+    image: meme-frontend
+    ports:
+      - 8080:80
+  meme_backend:
+    image: meme-backend
+    ports: 
+    - 4040:8080
+    
+  meme_db:
+      image: mongo:latest
+
