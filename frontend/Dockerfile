@@ -6,5 +6,5 @@ RUN npm run build
 
 FROM nginx:alpine-slim
 EXPOSE 80
-COPY ./docker/nginx/conf.d/default.conf /etc/nginx/conf.d/default.conf
+COPY /docker/nginx/conf.d/default.conf /etc/nginx/conf.d/default.conf
 COPY --from=build /usr/app/build /usr/share/nginx/html

@@ -7,7 +7,7 @@ plugins {
 
 group = 'com.memepage'
 version = '0.0.1-SNAPSHOT'
-sourceCompatibility = '19'
+sourceCompatibility = '17'
 
 repositories {
 	mavenCentral()
@@ -15,8 +15,10 @@ repositories {
 
 docker {
 	name "meme-backend"
+	copySpec.from("build").into("build")
 	dockerfile file('Dockerfile')
 }
+
 
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter-data-mongodb'
