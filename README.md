@@ -6,7 +6,7 @@ docker build -t meme-frontend .
 ```
 ```
 cd rest-backend 
-docker build -t meme-backend .
+./gradlew clean build docker
 ```
 start the docker-compose file from the root folder
 ```
